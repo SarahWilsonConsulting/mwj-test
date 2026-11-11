@@ -16,7 +16,6 @@
   --r-btn: 10px;
   --wrap: 1200px;
   --display: "Special Gothic", "Arial Narrow", system-ui, sans-serif;
-  --wide: "Special Gothic Expanded One", "Special Gothic", system-ui, sans-serif;
   --body: "Nunito Sans", system-ui, sans-serif;
 }
 
@@ -33,7 +32,7 @@ h3 { font-size: clamp(1.2rem, 1.6vw, 1.4rem); }
 h4 { font-size: 1.1rem; }
 .h-lg { font-size: clamp(1.5rem, 2.4vw, 2rem); }
 .h-xl { font-size: clamp(1.9rem, 3.4vw, 2.75rem); letter-spacing: -.01em; }
-.h-display { font-family: var(--wide); font-weight: 400; font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1; }
+.h-display { font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1; letter-spacing: -.02em; }
 p { margin: 0 0 1em; }
 ul, ol { margin: 0; padding: 0; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -85,7 +84,7 @@ section { padding: 112px 0; }
 .hero-lion { position: absolute; right: 2%; top: 4%; width: min(46vw, 640px); opacity: .07; pointer-events: none; }
 .hero-grid { width: 100%; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 24px; align-items: end; padding-top: 72px; }
 .hero-copy { position: relative; z-index: 2; padding-bottom: 96px; max-width: min(580px, 44vw); }
-.hero-quote { font: 400 clamp(2.3rem, 5.2vw, 4.6rem)/1 var(--wide); letter-spacing: -.02em; color: var(--ivory); margin-bottom: 36px; max-width: 13ch; }
+.hero-quote { font: 600 clamp(2.6rem, 5.6vw, 5rem)/1 var(--display); letter-spacing: -.025em; color: var(--ivory); margin-bottom: 36px; max-width: 13ch; }
 .hero h1 { font-size: clamp(1.25rem, 1.8vw, 1.5rem); font-weight: 600; color: var(--gold); margin-bottom: 14px; max-width: 34ch; }
 .lead { font-size: 1.12rem; color: var(--soft); max-width: 56ch; }
 .hero-figure { position: absolute; right: 0; bottom: 0; width: min(50vw, 780px); margin: 0; z-index: 1; }
@@ -159,7 +158,7 @@ section { padding: 112px 0; }
 .talks { list-style: none; }
 .talks li { padding: 22px 0; border-top: 1px solid rgba(244, 239, 230, .2); color: var(--soft); font-size: 1rem; }
 .talks li:last-child { border-bottom: 1px solid rgba(244, 239, 230, .2); }
-.talks strong { display: block; margin-bottom: 4px; font: 400 clamp(1.25rem, 2vw, 1.6rem)/1.15 var(--wide); color: var(--ivory); }
+.talks strong { display: block; margin-bottom: 4px; font: 600 clamp(1.35rem, 2.1vw, 1.7rem)/1.15 var(--display); color: var(--ivory); }
 
 /* About */
 .about-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 72px; align-items: start; }
@@ -169,7 +168,7 @@ section { padding: 112px 0; }
 .facts { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin: 36px 0 44px; border-top: 1px solid var(--rule-dark); border-bottom: 1px solid var(--rule-dark); }
 .facts li { padding: 20px 16px 20px 0; font-size: .95rem; line-height: 1.4; color: var(--soft); }
 .facts li + li { padding-left: 16px; border-left: 1px solid var(--rule-dark); }
-.facts strong { display: block; font: 400 clamp(1.15rem, 1.7vw, 1.45rem)/1.1 var(--wide); color: var(--gold); margin-bottom: 8px; }
+.facts strong { display: block; font: 600 clamp(1.4rem, 2vw, 1.7rem)/1.1 var(--display); white-space: nowrap; color: var(--gold); margin-bottom: 8px; }
 .two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
 .list { list-style: none; display: grid; gap: 12px; font-size: 1rem; color: var(--soft); }
 .list li { padding-left: 18px; position: relative; }
@@ -265,3 +264,16 @@ section { padding: 112px 0; }
   .footer-grid { grid-template-columns: 1fr; gap: 20px; }
   .proof-inner { gap: 12px; }
 }
+
+/* Brand rule: Special Gothic for headings, Nunito Sans for body, Nunito Sans caps for subheadings */
+h3, h4, .proof h2, .procure summary, .facts-list dt, .procure-list dt, .form legend, .stage h4 { font-family: var(--body); font-weight: 700; text-transform: uppercase; letter-spacing: .07em; font-size: 1rem; line-height: 1.35; }
+h3 { color: var(--gold); }
+.paper h3 { color: var(--maroon); }
+.maroon h3, .stage h3 { color: var(--ivory); }
+.paths h3, .h-lg, .h-xl { font-family: var(--display); font-weight: 600; text-transform: none; letter-spacing: -.01em; line-height: 1.12; }
+.paths h3 { font-size: clamp(1.4rem, 2.2vw, 1.85rem); }
+.h-lg { font-size: clamp(1.5rem, 2.4vw, 2rem); }
+.h-xl { font-size: clamp(1.9rem, 3.4vw, 2.75rem); }
+.paper .h-lg { color: var(--ink); }
+.accordion summary { font-family: var(--body); font-weight: 700; }
+.proof h2 { font-size: .85rem; color: var(--soft); }
