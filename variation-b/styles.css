@@ -82,7 +82,7 @@ section { padding: 112px 0; }
 .hero { position: relative; overflow: hidden; padding: 0; min-height: min(860px, calc(100svh - 72px)); display: flex; align-items: center;
   background: var(--ink) url("img/pattern-weave.svg"); }
 .hero::before { content: ""; position: absolute; top: 0; bottom: 0; right: 0; width: min(36vw, 560px); background: #1b232b url("img/stone-dark.webp") 0 0 / 640px; border-left: 3px solid var(--gold); }
-.hero-lion { position: absolute; right: 1%; top: 5%; width: min(32vw, 480px); opacity: .16; pointer-events: none; }
+.hero-lion { position: absolute; right: 3%; top: 5%; width: min(30vw, 440px); opacity: .9; pointer-events: none; }
 .hero-grid { width: 100%; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 24px; align-items: end; padding-top: 72px; }
 .hero-copy { position: relative; z-index: 2; padding-bottom: 96px; max-width: min(580px, 44vw); }
 .hero-quote { font: 400 clamp(2.2rem, 4.6vw, 4.3rem)/1.02 var(--display); letter-spacing: -.02em; color: var(--ivory); margin-bottom: 36px; max-width: 13ch; }
