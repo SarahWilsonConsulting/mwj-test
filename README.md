@@ -5,3 +5,7 @@ Static one-page preview of the mwjenterprises.com copy. Not for public release: 
 - `public/` holds the site (HTML, CSS, a small script for the mobile menu and form fields).
 - `public/_headers` sets security headers and noindex.
 - `wrangler.jsonc` points Cloudflare at `public/`. The `name` must match the Worker name in Cloudflare.
+
+## Variation B (people-friendly)
+
+`variation-b/` is a second, lighter design of the same page for a separate Wix site. Cloudflare does not deploy it (only `public/` is served), so the current preview is unchanged.
