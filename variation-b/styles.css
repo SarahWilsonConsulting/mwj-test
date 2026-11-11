@@ -281,3 +281,16 @@ h3 { color: var(--gold); }
 
 .contact { background: var(--ink) url("img/pattern-weave.svg"); }
 @media (max-width: 960px) { .hero::before { width: 100%; top: 0; bottom: auto; height: 300px; } .hero-lion { top: 10px; bottom: auto; width: 60vw; } }
+
+/* Brand rule: headings are set in caps */
+h1, h2, .hero-quote, .h-lg, .h-xl, .h-display, .paths h3, .talks strong, .facts strong { text-transform: uppercase; letter-spacing: 0; }
+h2, .h-xl { font-size: clamp(1.3rem, 2.2vw, 1.9rem); line-height: 1.2; }
+.h-lg { font-size: clamp(1.15rem, 1.7vw, 1.45rem); line-height: 1.25; }
+.hero-quote { font-size: clamp(1.9rem, 4.1vw, 3.8rem); line-height: 1.05; max-width: 12ch; }
+.hero h1 { font-size: clamp(.95rem, 1.25vw, 1.1rem); line-height: 1.3; }
+.h-display { font-size: clamp(1.9rem, 3.6vw, 3rem); line-height: 1.05; }
+.paths h3 { font-size: clamp(1.05rem, 1.5vw, 1.3rem); line-height: 1.25; }
+.talks strong { font-size: clamp(1.05rem, 1.5vw, 1.3rem); line-height: 1.25; }
+.facts strong { font-size: clamp(1rem, 1.35vw, 1.2rem); }
+h1, h2, .hero-quote, .h-lg, .h-xl, .h-display, .paths h3, .talks strong { overflow-wrap: break-word; }
+.hero-quote span { white-space: nowrap; }
