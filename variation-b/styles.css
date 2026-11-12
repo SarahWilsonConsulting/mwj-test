@@ -324,3 +324,14 @@ section { padding: 112px 0; }
   .contact .form { order: 1; margin: 16px 0 0; }
   .contact-figure { order: 2; max-width: 420px; padding-top: 48px; justify-self: center; }
 }
+
+/* Calls to action on cards and list items */
+.btn-sm { min-height: 44px; padding: 10px 18px; font-size: .78rem; }
+.paths .btn { margin-top: 20px; }
+.offers article, .resources li { display: flex; flex-direction: column; }
+.offers article > p:not(.card-cta) { flex: 1; }
+.card-cta { margin: 8px 0 0; }
+.resources .btn { align-self: flex-start; }
+.topic-cta { display: table; margin-top: 6px; font-weight: 700; font-size: .9rem; white-space: nowrap; }
+.topic-cta::after { content: " \2192"; }
+.reviews > .wrap > .actions { margin-top: 48px; }

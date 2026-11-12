@@ -32,9 +32,16 @@ const pathway = document.getElementById("pathway");
 const groups = document.querySelectorAll("fieldset[data-for]");
 const showGroup = () => groups.forEach((g) => { g.hidden = g.dataset.for !== pathway.value; });
 pathway.addEventListener("change", showGroup);
+// Prefill the message with the option clicked, unless the visitor already typed one
+const message = document.querySelector('#contact-form textarea[name="message"]');
+let prefill = "";
 document.querySelectorAll("a[data-pathway]").forEach((a) => a.addEventListener("click", () => {
   pathway.value = a.dataset.pathway;
   showGroup();
+  if (a.dataset.topic && (message.value === "" || message.value === prefill)) {
+    prefill = `I'm interested in: ${a.dataset.topic}.`;
+    message.value = prefill;
+  }
 }));
 showGroup();
 
