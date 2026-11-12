@@ -294,7 +294,7 @@ section { padding: 112px 0; }
   .paths-section { padding: 40px 0; }
   .offers, .procure-list, .two-col, .form .row, .resources, .review-row { grid-template-columns: 1fr; }
   .review-row { gap: 40px; }
-  .offers article, .resources li { padding: 24px 20px 18px; }
+  .resources li { padding: 24px 20px 18px; }
   .facts-list div { grid-template-columns: 1fr; gap: 2px; }
   .facts { gap: 0 20px; }
   .form button, .actions .btn, .donate-actions .btn { width: 100%; }
@@ -328,10 +328,5 @@ section { padding: 112px 0; }
 /* Calls to action on cards and list items */
 .btn-sm { min-height: 44px; padding: 10px 18px; font-size: .78rem; }
 .paths .btn { margin-top: 20px; }
-.offers article, .resources li { display: flex; flex-direction: column; }
-.offers article > p:not(.card-cta) { flex: 1; }
-.card-cta { margin: 8px 0 0; }
+.resources li { display: flex; flex-direction: column; }
 .resources .btn { align-self: flex-start; }
-.topic-cta { display: table; margin-top: 6px; font-weight: 700; font-size: .9rem; white-space: nowrap; }
-.topic-cta::after { content: " \2192"; }
-.reviews > .wrap > .actions { margin-top: 48px; }
