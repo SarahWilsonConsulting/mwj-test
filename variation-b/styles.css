@@ -370,3 +370,22 @@ section { padding: 112px 0; }
 }
 .about .actions { margin-bottom: 56px; }
 @media (max-width: 900px) { .news-photo { max-width: 280px; } }
+
+/* Leadership: accountability, then second chance, stacked */
+.pair { grid-template-columns: 1fr; gap: 80px; }
+.pair .col > p { max-width: 78ch; }
+.qa-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 64px; margin-top: 28px; border-top: 0; }
+.qa { border-top: 1px solid var(--rule-dark); border-bottom: 0; padding: 20px 0 28px; }
+@media (max-width: 900px) { .qa-list { grid-template-columns: 1fr; } .pair { gap: 56px; } }
+/* About: stone panel behind the photos */
+.about { position: relative; }
+.about::before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; width: min(46vw, 660px); background: #1b232b url("img/stone-dark.webp") 0 0 / 640px; border-right: 3px solid var(--gold); }
+.about .wrap { position: relative; }
+@media (max-width: 900px) {
+  .about::before { display: none; }
+  .about { padding-top: 0; }
+  .about-side { margin: 0 -40px; padding: 48px 40px 48px; background: #1b232b url("img/stone-dark.webp") 0 0 / 640px; border-bottom: 3px solid var(--gold); }
+  .about-photos { padding-bottom: 96px; }
+  .news-photo { margin-top: 24px; }
+}
+@media (max-width: 760px) { .about-side { margin: 0 -16px; padding-left: 16px; padding-right: 16px; } }
