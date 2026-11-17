@@ -185,7 +185,7 @@ section { padding: 112px 0; }
 .band::after { content: ""; position: absolute; inset: 0; background: rgba(11, 16, 20, .32); pointer-events: none; }
 .band-quote { position: absolute; z-index: 1; right: 4vw; top: 50%; transform: translateY(-50%); width: 29vw; margin: 0; }
 .band-quote p { margin: 0; padding-bottom: 24px; border-bottom: 2px solid var(--gold); font-size: clamp(.95rem, 1.85vw, 2rem); line-height: 1.15; color: var(--ivory); text-wrap: balance; }
-.band-quote span { display: block; margin-top: .5em; color: var(--gold); }
+.band-quote em { font-style: normal; color: var(--gold); }
 .stage { position: relative; overflow: hidden; background: var(--ink); padding: 140px 0; }
 .stage-bg { position: absolute; inset: -24px; background: url("img/michael-stage-photo.webp") 54% 30% / cover no-repeat; filter: blur(7px); }
 .stage::before { content: ""; position: absolute; inset: 0; z-index: 1; background: rgba(11, 16, 20, .8); }
