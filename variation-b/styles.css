@@ -110,7 +110,8 @@ section { padding: 112px 0; }
 .proof-inner { display: flex; align-items: center; gap: 24px 56px; flex-wrap: wrap; }
 .proof h2 { margin: 0; font-size: .8rem; color: var(--ink); }
 .proof-logos { list-style: none; display: flex; align-items: center; flex-wrap: wrap; gap: 24px 64px; }
-.proof-logos img { width: auto; filter: grayscale(1) contrast(1.2); mix-blend-mode: multiply; }
+.proof-logos img { width: auto; filter: drop-shadow(0 2px 3px rgba(16, 24, 30, .5)); }
+.proof-logos li:nth-child(3) img { filter: drop-shadow(1px 0 0 var(--ink)) drop-shadow(-1px 0 0 var(--ink)) drop-shadow(0 1px 0 var(--ink)) drop-shadow(0 -1px 0 var(--ink)) drop-shadow(0 3px 4px rgba(16, 24, 30, .45)); }
 .proof-logos li:nth-child(1) img { height: 22px; }
 .proof-logos li:nth-child(2) img { height: 34px; }
 .proof-logos li:nth-child(3) img { height: 40px; }
